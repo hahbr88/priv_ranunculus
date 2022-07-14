@@ -1,0 +1,166 @@
+body {
+    height: 100vh;
+    background-color:#fbd3cb;
+}
+
+/*폰트 추가*/
+*{ font-family: 'Noto Serif KR', serif; }
+button { font-family: 'Noto Serif KR', serif;  }
+/*구글 폰트*/
+.font_Gb { font-family: 'Gowun Batang', serif; }
+.font_Ns { font-family: 'Noto Serif KR', serif; }
+
+/*로딩*/
+.loading_wrap{
+    width: 100%;
+    height: 100%;
+    background-color: #fbd3cb;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadericon {
+    animation: rotate_image 9s linear infinite;transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*상단*/
+.navbar {
+    position: relative;
+    background-color: #fbd3cb;
+}
+.is-ranunculus {
+    color: pink !important;
+}
+
+
+/*index 페이지*/
+.mTitle { font-size: 2.5rem;}
+
+#hero_image {
+    height: 100%;
+    background-image: url("../main_back.png");
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:#fbd3cb;
+}
+
+.button.is-sign {
+    background-color: #d5a2a1;
+    border-color: transparent;
+    color: #fff !important;
+    width: 100px;
+}
+
+.greeting {
+    margin-right: 50px;
+}
+
+.user_name_hi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mbtn-l { margin-right: 10px;}
+@media all and (max-width: 450px) {
+    .mbtn-l { margin-right: 0px; }
+    .mbtn-r { margin-top:20px;}
+}
+
+
+/*login 페이지*/
+.loginsection {
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.button.is-ranunculus {
+        background-color: #d5a2a1;
+        border-color: transparent;
+        color: #fff !important;
+    }
+
+.button.is-ranunculus.is-outlined {
+    background-color: transparent;
+    border-color: #d5a2a1;
+    color: #d5a2a1 !important;
+}
+.help {
+    color: gray;
+}
+
+
+/*reservation 페이지*/
+.section2 {
+    padding-bottom:60px;
+    background-color:#fbd3cb;
+}
+
+/*review 페이지*/
+#weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+#review_btn {
+    padding: 10px;
+    background-color: #d5a2a1;
+    color: #fff !important;
+    border-color: transparent;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#review_btn:hover {
+    background-color: #dab6b5;
+}
+
+.cards-box {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom:30px;
+    background-color:#fbd3cb;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+#card_title {
+    font-size: 20px;
+}
+
+#card_subtitle {
+    font-size: 15px;
+}
+
+#review_form > div > label {
+    margin-top: 20px;
+}
+
+#review_form {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#content {
+    width: 100%;
+}
